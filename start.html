@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+<title>HTML Tutorial</title>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.back{
+
+  border:1px solid red;
+  font-family: "Times New Roman", Times, serif;
+  
+
+}
+
+
+.front{
+
+  margin:5px;
+  font-size:1.8em;
+  
+
+}
+
+#tdv{
+
+padding:100px;
+border:1px solid red;
+
+}
+</style>
+</head>
+<body>
+
+
+
+
+<script async type="module">
+
+ import {uyariVer} from  "./new.js";
+ import  {default as adiSoyle} from "./back.js";
+ import {senSoyle}from './back.js';
+//uyariVer();
+//adiSoyle();
+//senSoyle();
+
+
+ 
+
+
+
+function sehirleriAl(){
+
+let df=new DocumentFragment();
+
+
+console.dir(df);
+let sehirler=["İstanbul","Ankara","İzmir","Bursa","Samsun","Diyarbakır","Antalya","Gaziantep","Erzurum"]
+ 
+
+ for(let item of sehirler)
+  {
+  
+        let elm=document.createElement("li");
+		let text=document.createTextNode(item);
+		if(item=="Samsun"){elm.className="back front";}
+		  
+		  elm.append(text);
+		  df.append(elm);
+  
+  
+  }
+
+return df;
+}
+
+sehir.append(sehirleriAl())
+
+
+
+
+
+
+</script>
+
+<h2>HTML Table</h2>
+
+<div  id="tdv" style="position:relative">
+<div id="example">
+ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+ 
+ There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+ 
+</div>
+
+<button id="btn">Button</button>
+</div>
+<style>
+  #example {
+    width: 300px;
+    height: 200px;
+    border: 25px solid #E8C48F;
+    padding: 20px;
+    overflow: auto;
+  }
+</style>
+
+
+
+<table id="tbl">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+
+<h1>This is a heading</h1>
+<p id="prg">This is a paragraph.</p>
+
+<ul id="sehir">
+
+</ul>
+
+<input id="inp" value="text"/>
+<input id="input" type="checkbox" checked> checkbox
+
+<script>
+
+let str = 'let varName';
+
+
+let pattern=/\w+/gy;
+pattern.lastIndex=str.search(pattern)+2;
+let tag = "";
+
+
+while(tag=pattern.exec(str))
+console.log(`kelime:${tag}    pozisyon:${pattern.lastIndex}`);
+
+
+
+
+console.log("---------------------------");
+console.dir(pattern.lastIndex);
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
